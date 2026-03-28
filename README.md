@@ -1,5 +1,7 @@
 # tdeNordgui : a NordVPN GUI for TDE
 
+![tdeNordgui](./konqi/konqi_secret.jpg)
+
 A lightning-fast, native, and extremely lightweight graphical interface for the NordVPN Linux CLI, built natively for the **Trinity Desktop Environment (TDE)** using the **TQt3** framework.
 
 This project was built to replace the heavy, electron-style Flutter interface with a C++ native implementation that consumes very little RAM, starts instantly, and integrates perfectly with classic TDE desktop paradigms.
@@ -97,3 +99,14 @@ The resulting binary `tdenordgui` will be generated in the `build/` directory.
 Built for the Trinity Desktop Environment community prioritizing speed, bloat-free development, and native aesthetics. 
 
 **Disclaimer**: This project is not affiliated with, endorsed by, or sponsored by NordVPN. It is an independent initiative created by a user who simply wanted a "better", lightweight graphical interface natively integrated into TDE.
+
+## Some screenshots:
+
+![Screenshot 1](./screenshots/tdenordgui_1.png)
+![Screenshot 2](./screenshots/tdenordgui_2.png)
+![Screenshot 3](./screenshots/tdenordgui_3.png)
+![Screenshot 4](./screenshots/tdenordgui_4.png)
+![Screenshot 5](./screenshots/tdenordgui_5.png)
+![Screenshot 6](./screenshots/tdenordgui_6.png)
+![Screenshot 7](./screenshots/tdenordgui_7.png)
+![Screenshot 8](./screenshots/tdenordgui_8.png)
