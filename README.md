@@ -1,4 +1,4 @@
-# NordVPN GUI (TQt3 / TDE Edition)
+# tdeNordgui : a NordVPN GUI for TDE
 
 A lightning-fast, native, and extremely lightweight graphical interface for the NordVPN Linux CLI, built natively for the **Trinity Desktop Environment (TDE)** using the **TQt3** framework.
 
