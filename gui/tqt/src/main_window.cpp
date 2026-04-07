@@ -1840,10 +1840,10 @@ void MainWindow::onTermsLinkClicked(const TQString& link)
 
 void MainWindow::quitApplication()
 {
-    if (m_statusLabel && m_statusLabel->text().contains("Connected to")) {
-        TQString vpnState = m_client->getVpnStateString();
-        vpnState.replace("Connected to: ", "");
-        TQString message = TQString("You are currently connected to <b>%1</b>.<br><br>Closing the GUI application will not disconnect you from the VPN daemon.<br><br>Are you sure you want to quit?").arg(vpnState);
+    DaemonClient::VpnStatus status = m_client->getVpnStatus();
+    if (status.isConnected) {
+        TQString serverName = status.serverName.isEmpty() ? "the VPN" : status.serverName;
+        TQString message = TQString("You are currently connected to <b>%1</b>.<br><br>Closing the GUI application will not disconnect you from the VPN daemon.<br><br>Are you sure you want to quit?").arg(serverName);
         int ret = TQMessageBox::warning(this, "Quit Application", message, "Quit", "Cancel", TQString::null, 1, 1);
         if (ret == 1) return; // User clicked Cancel
     }
