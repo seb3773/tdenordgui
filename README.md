@@ -24,7 +24,7 @@ You will need the Trinity Desktop development suites, Qt3/TQt3 headers, and the 
 
 On Debian/Ubuntu-based system with the TDE repository enabled:
 ```bash
-sudo apt install build-essential cmake pkg-config tqt3-dev trinity-tdecore-dev trinity-tdeui-dev libnotify-dev libgrpc++-dev libprotobuf-dev protobuf-compiler protobuf-compiler-grpc
+sudo apt install build-essential cmake pkg-config libtqt3-mt-dev tdelibs14-trinity-dev libnotify-dev libgrpc++-dev libprotobuf-dev protobuf-compiler protobuf-compiler-grpc
 ```
 
 ### Daemon Installation (Required)

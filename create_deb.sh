@@ -4,12 +4,14 @@
 set -e
 
 APP_NAME="tdenordgui"
-VERSION="1.0.0"
+VERSION="1.0.1"
 ARCH="amd64"
 MAINTAINER="NordVPN TQt3 Port <noreply@example.com>"
 DESCRIPTION="A lightning-fast, native, and extremely lightweight graphical interface for the NordVPN Linux CLI, built natively for TDE using TQt3."
 
-DEPENDS="libc6, libgcc-s1, libstdc++6, tqt3 | libtqt4, trinity-tdecore, trinity-tdeui, libnotify4, libgrpc++1 | libgrpc++-dev | libgrpc++1.51, libprotobuf32 | libprotobuf-dev | libprotobuf23"
+# Runtime deps must match Trinity TDE package names (libtqt3-mt, tdelibs14-trinity),
+# not generic/invented names like tqt3, libtqt4, trinity-tdecore, trinity-tdeui.
+DEPENDS="libc6, libgcc-s1, libstdc++6, libtqt3-mt, tdelibs14-trinity, libnotify4, libgrpc++1.51 | libgrpc++1, libprotobuf32 | libprotobuf23"
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
