@@ -87,6 +87,21 @@ make -j$(nproc)
 
 The resulting binary `tdenordgui` will be generated in the `build/` directory.
 
+### Packaging (.deb, .qsi, AppImage)
+
+- **Debian Package (`.deb`)**:
+  ```bash
+  ./create_deb.sh
+  ```
+- **Q4OS Installer (`.qsi`)**:
+  ```bash
+  ./build_qsi.sh
+  ```
+- **AppImage Release**:
+  ```bash
+  ./build_appimage.sh
+  ```
+
 ## Troubleshooting
 
 - **"Failed to connect to the NordVPN daemon" at startup**: 
