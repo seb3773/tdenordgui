@@ -1,0 +1,24 @@
+Architectures: amd64
+Codename: stable
+Components: main
+Date: Thu, 27 Aug 2026 11:12:56 +0000
+Description: APT Repository for tdeNordgui - Native NordVPN GUI (Trinity Desktop & Linux)
+Label: tdeNordgui APT Repository
+Origin: tdenordgui
+Suite: stable
+MD5Sum:
+ 9e27c107fd85f32318cc7e1c1b42ba3d              249 Release
+ ad6c62a614716b4dd43c20b6c14b3987              917 main/binary-amd64/Packages
+ f999dbeeeb8a5bea3c80ba751e5ff553              618 main/binary-amd64/Packages.gz
+SHA1:
+ eeba2099544df647d5528d97504a4354339cfaa2              249 Release
+ 2331299261cd9b671deb9f611648a2c4d8082920              917 main/binary-amd64/Packages
+ 9534d5e8ed3a580a83b2ae19aa8170785a6b18f5              618 main/binary-amd64/Packages.gz
+SHA256:
+ 9b18eeb1dcf04a1595c1ba24e19daec0b56e5cbf0f63c3ee8f1136305dd32d56              249 Release
+ 36c8356f7ba14acd3153edecbd689c8dde183db11a39a6805e72ec88496867c5              917 main/binary-amd64/Packages
+ 9a10d4fd2468c36d3a574b52d50dd45485ae010ae30cadce3e2daaac7b47e80d              618 main/binary-amd64/Packages.gz
+SHA512:
+ 264b57389faf86e2a1f94835a4264ba6b7a0fb8b322d58b2af3fd971889426ec1501ac0da6c6625a4c8e457001927362c4070e587aa5acae6046467d0cebd592              249 Release
+ dc41553607fc7716be1c6653ddd922a642dad07f38732c97651927483055d93ee5fa0b20d141efdc87ce1ff682636f2c3752766d9e0a4fe007c370e90f030ae7              917 main/binary-amd64/Packages
+ 6bd0712c45ce068f2b7b8b2c3b1764daf390bd680bc399e191ca2037dc52418f63fb30a5d6ed4985a6db960a155bad1df5149adbf78c91b515bf6dc6c385dc61              618 main/binary-amd64/Packages.gz
