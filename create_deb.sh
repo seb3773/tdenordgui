@@ -70,8 +70,8 @@ fi
 cp "$ICON_PATH" "$PKG_DIR/usr/share/icons/hicolor/48x48/apps/tdenordgui.png"
 chmod 644 "$PKG_DIR/usr/share/icons/hicolor/48x48/apps/tdenordgui.png"
 
-# 4. Generate the Debian control file
-echo "[*] Generating DEBIAN/control file..."
+# 4. Generate the Debian control and maintainer scripts
+echo "[*] Generating DEBIAN/control file and maintainer scripts..."
 cat << EOF > "$PKG_DIR/DEBIAN/control"
 Package: $APP_NAME
 Version: $VERSION
@@ -87,6 +87,30 @@ Description: $DESCRIPTION
  or Flutter overhead, pure C++ power.
 EOF
 chmod 644 "$PKG_DIR/DEBIAN/control"
+
+cat << 'EOF' > "$PKG_DIR/DEBIAN/postinst"
+#!/bin/sh
+set -e
+# Configuration automatique du dépôt APT pour les futures mises à jour
+if [ -d /etc/apt/sources.list.d ]; then
+    cat << 'REPEOF' > /etc/apt/sources.list.d/tdenordgui.list
+# tdeNordgui APT Repository
+deb [trusted=yes] https://seb3773.github.io/tdenordgui/ stable main
+REPEOF
+fi
+exit 0
+EOF
+chmod 755 "$PKG_DIR/DEBIAN/postinst"
+
+cat << 'EOF' > "$PKG_DIR/DEBIAN/postrm"
+#!/bin/sh
+set -e
+if [ "$1" = "purge" ] || [ "$1" = "remove" ]; then
+    rm -f /etc/apt/sources.list.d/tdenordgui.list
+fi
+exit 0
+EOF
+chmod 755 "$PKG_DIR/DEBIAN/postrm"
 
 # 5. Build the .deb file
 echo "[*] Building the .deb package..."
