@@ -4,10 +4,10 @@ Architecture: amd64
 Maintainer: NordVPN TQt3 Port <noreply@example.com>
 Depends: libc6, libgcc-s1, libstdc++6, libtqt3-mt, tdelibs14-trinity, libnotify4, libgrpc++1.51 | libgrpc++1, libprotobuf32 | libprotobuf23
 Filename: pool/main/t/tdenordgui/tdenordgui_1.0.1_amd64.deb
-Size: 217116
-MD5sum: 94cabeab539f60d8e7dd063e6750e808
-SHA1: f2c6baf1cb2312544fa81eba865df7c22597faaa
-SHA256: 42448b21650d69559957319315b2827aabc26c3a44d8feb95e472224bedf096c
+Size: 217684
+MD5sum: 27909c544ec75b62258f5c25760c7fcb
+SHA1: e0e8999707c88744804f4427981dd60612e34840
+SHA256: 3f46b79b0e3e7300aeafaf167c4a8a5683db023a67a1a165a559012f479868c2
 Section: net
 Priority: optional
 Description: A lightning-fast, native, and extremely lightweight graphical interface for the NordVPN Linux CLI, built natively for TDE using TQt3.
